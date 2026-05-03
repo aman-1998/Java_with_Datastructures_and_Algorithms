@@ -7,6 +7,9 @@ import java.util.PriorityQueue;
 public class PriorityQueue_MaxHeap {
 	public static void main(String[] args) {
 		PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
+		
+		System.out.println("Heap size :" + maxHeap.size() + "\n");
+		
 		maxHeap.add(9); // add or insert
 		maxHeap.add(15);
 		maxHeap.add(6);

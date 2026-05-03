@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Current File (JDK 8)",
+      "request": "launch",
+      "mainClass": "${file}",
+      "javaExec": "C:\\Program Files\\Java\\jdk-8\\bin\\java.exe",
+      //"console": "externalTerminal"
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "java",
+      "name": "Run Current File (JDK 17)",
+      "request": "launch",
+      "mainClass": "${file}",
+      "javaExec": "C:\\Program Files\\Java\\jdk-17\\bin\\java.exe",
+      //"console": "externalTerminal"
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "java",
+      "name": "Run Current File (JDK 21)",
+      "request": "launch",
+      "mainClass": "${file}",
+      "javaExec": "C:\\Program Files\\Java\\jdk-21\\bin\\java.exe",
+      //"console": "externalTerminal"
+      "console": "integratedTerminal"
+    }
+  ]
+}

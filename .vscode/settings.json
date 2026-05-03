@@ -1,0 +1,22 @@
+{
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "C:\\Program Files\\Java\\jdk-8",
+            "default": true
+        },
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Program Files\\Java\\jdk-17"
+        },
+        {
+            "name": "JavaSE-21",
+            "path": "C:\\Program Files\\Java\\jdk-21"
+        }
+    ],
+    //"java.debug.settings.console": "externalTerminal",
+    "java.debug.settings.console": "integratedTerminal",
+    "java.debug.settings.onBuildFailureProceed": true
+}

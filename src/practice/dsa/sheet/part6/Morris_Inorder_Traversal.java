@@ -27,7 +27,7 @@ public class Morris_Inorder_Traversal {
 	}
 	
 	/*
-	 * T = o(n)
+	 * T = O(n)
 	 * S = O(1)
 	 */
 	public static List<Integer> inorderUsingMorris(Node root) {
