@@ -35,7 +35,7 @@ public class Root_To_Node_Path {
 	public static List<Integer> rootToNodePath(Node root, int val) {
 		
 		List<Integer> res = new ArrayList<>();
-		find_1st(root, val, res);
+		find_2nd(root, val, res);
 		return res;
 	}
 	
