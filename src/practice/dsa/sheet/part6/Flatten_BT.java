@@ -20,17 +20,21 @@ public class Flatten_BT {
 		
 		root.right.right = new Node(6);
 		
-		flatten(root);
+		root.right.right.left = new Node(7);
+		
+		flatten_3rd(root);
 		
 		PrintRightSkewedBinary(root);
 	}
 	
 	/*
+	 * Good
+	 * 
 	 * T = O(n)
 	 * S = O(n) + O(n) [stack + system-stack]
 	 * => S = O(n)
 	 */
-	public static void flatten(Node root) {
+	public static void flatten_1st(Node root) {
 		
 		if(root != null) {
 			if(root.right != null) {
@@ -53,16 +57,79 @@ public class Flatten_BT {
 			
 			root.right = nodeToBeAdded;
 			root.left = null;
-			flatten(root.right);
+			flatten_1st(root.right);
 		}
 	}
+	
+	/*
+	 * Better
+	 * 
+	 * T = O(n)
+	 * S = O(n)
+	 */
+	public static void flatten_2nd(Node root) {
+		
+		if(root == null) {
+			return;
+		}
+
+		Stack<Node> stack = new Stack<>();
+		stack.push(root);
+		
+		while(!stack.isEmpty()) {
+			
+			Node curr = stack.pop();
+			
+			if(curr.right != null) {
+				stack.push(curr.right);
+			}
+			
+			if(curr.left != null) {
+				stack.push(curr.left);
+			}
+			
+			if(!stack.isEmpty()) {
+				curr.right = stack.peek();
+			}
+			
+			curr.left = null;
+		}
+	}
+	
+	/*
+	 * Best
+	 * 
+	 * T = O(n)
+	 * S = O(1)
+	 */
+	public static void flatten_3rd(Node root) {
+		
+		Node curr = root;
+		
+		while(curr != null) {
+			
+			if(curr.left != null) {
+				
+				Node prev = curr.left;
+				while(prev.right != null) {
+					prev = prev.right;
+				}
+				
+				prev.right = curr.right;
+				curr.right = curr.left;
+				curr.left = null;
+			}
+			
+			curr = curr.right;
+		}
+ 	}
 	
 	private static void PrintRightSkewedBinary(Node root) {
 		
 		Node t = root;
 		
 		while(t != null) {
-			System.out.println(t.data);
+			System.out.print(t.data + " ");
 			t = t.right;
 		}
 	}
