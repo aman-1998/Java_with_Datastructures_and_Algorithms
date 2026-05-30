@@ -28,7 +28,6 @@ public class Lowest_Common_Ancestor_In_BT {
 		//Node p = root.left.left.left;
 		//Node q = root.right.right;
 		
-		
 		Node resNode = lowestCommonAncestor_1st(root, p, q);
 		
 		System.out.println(resNode.data);
