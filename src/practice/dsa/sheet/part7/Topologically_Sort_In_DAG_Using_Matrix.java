@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class Topologically_Sort_Directed_Acyclic_Graph_Using_Matrix {
+public class Topologically_Sort_In_DAG_Using_Matrix {
 	
 	public static void main(String[] args) {
 		

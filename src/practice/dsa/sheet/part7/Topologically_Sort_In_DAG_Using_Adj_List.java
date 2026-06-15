@@ -8,7 +8,7 @@ import java.util.Queue;
 
 import practice.dsa.sheet.part7.utility.Node;
 
-public class Topologically_Sort_Directed_Acyclic_Graph_Using_Adj_List {
+public class Topologically_Sort_In_DAG_Using_Adj_List {
 	
 	public static void main(String[] args) {
 		
