@@ -12,10 +12,12 @@ public class Huffman_Encoding {
 	public static void main(String[] args) {
 		//compression("");
 		//compression("a");
-		compression("abbcabdb");
+		String encodedVal = compression("abbcabdb"); // T = O(n*log n)
+		
+		System.out.println(encodedVal);
 	}
 	
-	public static void compression(String data) {
+	public static String compression(String data) {
 		
 		int n = data.length();
 		
@@ -57,8 +59,19 @@ public class Huffman_Encoding {
 		}
 		
 		System.out.println(charCodeMap);
+		
+		StringBuilder encodedVal = new StringBuilder();
+		for(int i = 0; i <= n-1; i++) {
+			encodedVal.append(charCodeMap.get(data.charAt(i)));
+		}
+		
+		return encodedVal.toString();
 	}
 	
+	/*
+	 * T = O(n*log n)
+	 * S = O(n)
+	 */
 	public static HuffmanNode createHuffmanTree(char[] charArr, int[] freqArr) {
 		
 		int n = charArr.length;
