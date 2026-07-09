@@ -25,9 +25,9 @@ public class Disjoint_Set_Implementation {
 
 class DisjointSet {
 	
-	private int[] size;
+	public int[] size;
 	
-	private int[] parent;
+	public int[] parent;
 	
 	public DisjointSet(int n) {
 		this.size = new int[n];
