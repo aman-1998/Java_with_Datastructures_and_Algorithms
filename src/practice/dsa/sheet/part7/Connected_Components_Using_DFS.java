@@ -12,7 +12,7 @@ public class Connected_Components_Using_DFS {
 	
 	public static void main(String[] args) {
 		
-		List<Node> G = new ArrayList<>();
+List<Node> G = new ArrayList<>();
 		
 		G.add(null);
 		
