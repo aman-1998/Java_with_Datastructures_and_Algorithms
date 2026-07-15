@@ -1,4 +1,4 @@
-package practice.dsa.sheet.part8;
+package practice.dsa.sheet.part7;
 
 import java.util.Arrays;
 import java.util.LinkedList;
