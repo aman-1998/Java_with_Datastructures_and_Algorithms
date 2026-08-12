@@ -42,6 +42,9 @@ public class Single_Source_Shortest_Path_For_UG_Using_PriorityQueue_Dijkstra {
 	/*
 	 * Dijkstra's algorithm using PriorityQueue
 	 * 
+	 * Dijkstra's algorithm works for even Directed graphs the only 
+	 * condition is that the edges should have positive weight.
+	 * 
 	 * T = O(V + E*log V)
 	 * S = O(V)
 	 */
